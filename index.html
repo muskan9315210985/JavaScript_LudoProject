@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LudoGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="ludo_game">🎲 LUDO GAME 🎲</h1>
+    <div class="container">
+    <div class="dice">
+        <h2 class="heading"> Player1</h2>
+        <img src="dice1.png" alt="" id="picture1">
+        
+    </div>
+    <div class="dice">
+        <h2 class="heading">Player2</h2>
+        <img src="dice6.png" alt="" id="picture2">
+    </div>
+</div>
+   <div>
+    <button id="play" onclick="ludogame()">Start</button>
+</div>
+<script> 
+    function ludogame(){
+    const play1=Math.floor(Math.random()*6)+1;
+    const play1dice="dice"+play1+".png ";
+    document.getElementById('picture1').setAttribute('src',play1dice);
+     
+    const play2=Math.floor(Math.random()*6)+1;
+    const play2dice="dice"+play2+".png ";
+    document.getElementById('picture2').setAttribute('src',play2dice);
+
+    if(play1>play2)
+        {document.querySelector('h1').innerHTML="🥳Player 1 won🥳";
+    }else if(play1<play2)
+       {document.querySelector('h1').innerHTML="🎉Player 2 won🎉";
+    }else {document.querySelector('h1').innerHTML="😵Draw😵"}
+
+    }
+
+    let play=document.getElementById("play");
+        function playMusic(){
+            let audio=new Audio("sound1.mp3");
+            audio.play()
+        }
+        play.addEventListener("click",playMusic);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(39, 38, 38);
+}
+
+.ludo_game{
+    text-align: center;
+    font-size: 85px;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 340px;
+    margin-top: 50px;
+}
+
+.box{
+    font-size: 30px;
+    color:yellow;
+    margin-top: 40px;
+}
+
+.heading{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 55px;
+}
+
+.dice{
+    font-size: 30px;
+    color:yellow;
+    margin-top: 40px; 
+ }
+
+button{
+    margin-left: 45%;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    color: rgb(17, 16, 16);
+    background-color: rgb(60, 216, 60);
+
+}
+button:hover{
+    background-color: rgb(65, 142, 187);
+}
+
+
